@@ -36,4 +36,9 @@ def grid_traveller(m,n):
 print(grid_traveller(1,2))
 print(grid_traveller(3,5))
 print(grid_traveller(2,10))
-print((grid_traveller(1950,1950)))   # working (max limit in Windows)
+''' leetcode max limit:
+1 <= m, n <= 100  (https://leetcode.com/problems/unique-paths/ ; https://leetcode.com/problems/unique-paths-ii/)
+1 <= m,n <= 20 (https://leetcode.com/problems/unique-paths-iii/)
+'''
+#print((grid_traveller(1950,1950)))   # working (max limit in Windows)
+print((grid_traveller(3950,3950)))   # working (max limit in mac)
