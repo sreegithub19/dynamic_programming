@@ -8,8 +8,9 @@ const fib = (n, memo = {}) => {
     return memo[n];
 }
 
-console.log(fib(BigInt(61626)));
-console.log(fib(BigInt(61626)).toString().length);   // 12879
+//console.log(fib(BigInt(61626)));    // max limit in mac
+console.log(fib(BigInt(7520)));       // // max limit in windows
+// console.log(fib(BigInt(61626)).toString().length);   // 12879 (mac)
 
 console.log(Number.MAX_SAFE_INTEGER);   // 9007199254740991
 

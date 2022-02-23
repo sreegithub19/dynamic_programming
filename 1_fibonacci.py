@@ -31,4 +31,5 @@ def fib(n):
 
     return sum
 
-print(fib(31700))
+#print(fib(31700))  #max limit in mac
+print(fib(3925))    #max limit in windows

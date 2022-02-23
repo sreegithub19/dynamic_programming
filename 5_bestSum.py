@@ -49,11 +49,14 @@ print(best_sum(300,[7,14],memo))
 memo = dict()
 print(best_sum(8,[2,3,5],memo))  
 memo = dict()
+print("7700:",end="")
+print(best_sum(7700,[2,3,5],memo))  #true (max limit in windows)
+memo = dict()
 print(best_sum(99999,[7,14],memo))  
 memo = dict()
 print(best_sum(99999,[8,14],memo))  
 memo = dict()
-print(best_sum(100000,[8,14,1],memo))  
+print(best_sum(100000,[8,14,1],memo))    #max limit in mac
 
 
 '''

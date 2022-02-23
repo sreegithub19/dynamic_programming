@@ -3,7 +3,7 @@
 
 import sys
 print(sys.getrecursionlimit())
-#sys.setrecursionlimit(50000)
+sys.setrecursionlimit(50000)
 print(sys.getrecursionlimit())
 
 d = dict()
@@ -36,4 +36,4 @@ def grid_traveller(m,n):
 print(grid_traveller(1,2))
 print(grid_traveller(3,5))
 print(grid_traveller(2,10))
-print(str(grid_traveller(300,200)))   # working
+print((grid_traveller(1950,1950)))   # working (max limit in Windows)

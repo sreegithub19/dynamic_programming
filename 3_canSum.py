@@ -45,11 +45,14 @@ print(can_sum(300,[7,14],memo))  #false
 memo = dict()
 print(can_sum(8,[2,3,5],memo))  #true
 memo = dict()
+print("7700:",end="")
+print(can_sum(7700,[2,3,5],memo))  #true (max limit in windows)
+memo = dict()
 print(can_sum(99999,[7,14],memo))  #false
 memo = dict()
 print(can_sum(99999,[8,14],memo))  #false
 memo = dict()
-print(can_sum(100000,[8,14,1],memo))  #True
+print(can_sum(100000,[8,14,1],memo))  #True   (max limit in mac)
 
 
 '''
