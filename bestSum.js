@@ -1,14 +1,10 @@
-let pythonBridge = require('python-bridge');
-//let express2 = require('nodemon');
-let python1 = pythonBridge();
-const http = require('http');
-//const open = require('open');
-
-python1.ex`
-
+const runner = require('child_process'); 
+const python_string = ` 
+ 
 # return the shortest array 
 
 import sys
+print(sys.version)
 print(sys.getrecursionlimit())
 sys.setrecursionlimit(35000)
 print(sys.getrecursionlimit())
@@ -75,6 +71,7 @@ print(best_sum(100000,[8,14,1],memo))
     -> True
 '''
 
-`
-
-python1.end();
+` 
+runner.execFile('python3', ['-c', python_string], (err, stdout, stderr) => { 
+    console.log(stdout) // hi 
+ });
